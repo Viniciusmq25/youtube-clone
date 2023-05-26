@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image.png" href="img/youtubelogo.svg">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/sidebar.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+    <title>YouTube</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="menu-esquerda">
+            <input type="checkbox" name="hamburguerbtn" id="menu-hamburguer">
+            <label for="menu-hamburguer"><img src="img/menu hamburguer.svg" alt="hamburguer" class="hamburguer"></label>
+
+            <a href="index.html"><img src="img/youtube.svg" alt="youtube" id="youtube-logo"></a>
+        </div>
+        <div class="pesquisa">
+            <input type="search" placeholder="Pesquisar" id="pesquisar" data-pesquisa>
+            <button class="pesquisar__botao" data-botao-pesquisa name="botao-de-pesquisa">
+        </div>
+        <div class="menu-direita">
+            <a href="postarVideo.html"><img src="img/camera.svg" data-video alt="post-video-btn"></a>
+            <img src="img/sino.svg" alt="notifications">
+            <div>
+                <input type="checkbox" id="perfil" class="perfil">
+                <label for="perfil" class="semLogin" data-usuario>
+                    <img src="img/icons8-male-user-32.png" id="icone-perfil">
+                    Login
+                </label>
+
+                <ul class="aba-perfil">
+                    <a href="login.html" data-troca-conta class="troca-conta">Entrar / Trocar conta</a>
+
+                    <button class="sair">entrar</button>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section class="container-principal">
+        <div class="sidebar">
+            <div class="sidebar-1 side sub-div-sidebar">
+                <a href="index.html" class="links-sidebar"><div>
+                    <img src="img/sidebar/home.svg" alt="home">
+                    <p>Home</p>
+                </div>
+                <div>
+                    <img src="img/sidebar/trending.svg" alt="trending">
+                    <p>Trending</p>
+                </div>
+                <div>
+                    <img src="img/sidebar/subscriptions.svg" alt="subscriptions">
+                    <p>Subscriptions</p>
+                </div>
+            </div></a>
+            <div class="sidebar-2 side sub-div-sidebar">
+                <div>
+                    <img src="img/sidebar/library.svg" alt="library">
+                    <p>Library</p>
+                </div>
+                <div>
+                    <img src="img/sidebar/history.svg" alt="history">
+                    <p>History</p>
+                </div>
+                <div>
+                    <img src="img/sidebar/your-videos.svg" alt="your-videos">
+                    <p>Your videos</p>
+                </div>
+                <div>
+                    <img src="img/sidebar/watch-later.svg" alt="watch-later">
+                    <p>Watch later</p>
+                </div>
+                <div>
+                    <img src="img/sidebar/liked.svg" alt="liked">
+                    <p>Liked videos</p>
+                </div>
+            </div>
+            <div class="sidebar-3 side sub-div-sidebar">
+                <h2 class="titulo-sidebar">subscription</h2>
+                <div>
+                    <img src="img/sidebar/carecarl.jpg" class="sub" alt="carecarl-sub">
+                    <p>CarecaRL</p>
+                </div>
+                <div>
+                    <img src="img/sidebar/BrowseChannels.svg" alt="BrowseChannels">
+                    <p>Browse channels</p>
+                </div>
+            </div>
+            <div class="sidebar-4 side sub-div-sidebar">
+                <h2 class="titulo-sidebar ">More from youtube</h2>
+                <div>
+                    <img src="img/sidebar/Youtube.svg" alt="youtube">
+                    <p>Youtube Premium</p>
+                </div>
+                <div>    
+                    <img src="img/sidebar/Gaming.svg" alt="Gaming">
+                    <p>Gaming</p>
+                </div>
+                <div>
+                    <img src="img/sidebar/Live.svg" alt="Live">
+                    <p>Live</p>
+                </div>
+            </div>
+            <div class="sidebar-5 side sub-div-sidebar">
+                <div>
+                    <img src="img/sidebar/Settings.svg" alt="Settings">
+                    <p>Settings</p>
+                </div>
+                <div>
+                    <img src="img/sidebar/Report.svg" alt="Report">
+                    <p>Report history</p>
+                </div>
+                <div>
+                    <img src="img/sidebar/Help.svg" alt="Help">
+                    <p>Help</p>
+                </div>
+                <div>
+                    <img src="img/sidebar/Feedback.svg" alt="feedback">
+                    <p>Send feedback</p>
+                </div>
+            </div>
+        </div>
+        <div class="container-videos">
+
+            <ul class="videos__container" alt="videos alura" data-lista>
+                
+            </ul>
+        </div>
+    </section>
+
+    <script src="js/script.js"></script>
+    <script src="js/sidebar.js"></script>
+    <script src="js/sairDaConta.js"></script>
+    <script src="js/mostrarVideos.js" type="module"></script>
+    <script src="js/buscarVideo.js" type="module"></script>
+    <script src="js/loginAdd.js" type="module"></script>
+
+</body>
+</html>

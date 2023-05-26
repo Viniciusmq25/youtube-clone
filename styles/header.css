@@ -1,0 +1,185 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem;
+    position: relative;
+}
+
+.header img{
+    width: 20px;
+}
+
+.menu-esquerda{
+    display: flex;
+    align-items: center;
+}
+
+.hamburguer{
+    margin-right: 1rem;
+}
+
+#menu-hamburguer{
+    display: none;
+}
+
+#youtube-logo{
+    width: 100px;
+}
+
+.pesquisa{
+    display: flex;
+}
+
+.pesquisar__botao {
+    border: none;
+    background: url("../img/lente.svg") no-repeat .5rem ;
+    padding: .5rem 1rem;
+    background-color: #F4F4F4;
+    border-radius: 0 10px 10px 0;
+}
+
+.pesquisa input{
+    border:1px solid black;
+    border-radius: 10px 0 0 10px;
+    width: 30vw;
+    padding: .5rem 1rem;
+}
+
+.pesquisa input:focus{
+    border: red solid 1px;
+    outline: none;
+}
+
+.menu-direita{
+    display: flex;
+    align-items: center;
+}
+
+.semLogin,.sair{
+    border-radius: 20px;
+    display: flex;
+    padding-right: .5rem;
+    align-items: center;
+    text-decoration: none;
+    font-weight: 700;
+    color: #3695E8;
+}
+
+.Login{
+    border: 1px solid #5a5959;
+    font-size: 20px;
+    border-radius: 50%;
+    text-transform: uppercase;
+    margin: 0 1rem;
+    padding: .5rem 1rem;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-weight: 700;
+    color: #5a5959;
+}
+
+.menu-direita img{
+    margin: 0 1rem;
+}
+
+/* menu-perfil */
+
+#perfil{
+    display: none;
+}
+
+#icone-perfil{
+    width: 40px;
+    margin: .2rem;
+}
+
+.aba-perfil{
+    height: 65px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    position: absolute;
+    align-items: center;
+    padding: .5rem;
+    border-radius: 6px;
+    top: 100%;
+    right: .5%;
+    width: 100px;
+    background-color: #5a5959;
+}
+
+.perfil:checked ~ .aba-perfil{
+    display: flex;
+    width: auto;
+}
+
+.troca-conta{
+    text-decoration: none;
+    color: white;
+    padding-bottom: .5rem;
+    border-bottom: 1px white solid;
+}
+
+.sair::after{
+    content: '→';
+    margin-left: .3rem;
+}
+
+.sair:hover{
+    background-color: #6b6b6b;
+    padding: .1rem .2rem;
+}
+
+.sair{
+    border: none;
+    background-color: transparent;
+    height: 17px;
+    padding: 0;
+    text-transform: uppercase;
+    transition: 100ms;
+}
+
+.perfil:checked + label {
+    background-color: #5a5959;
+    color: white;
+}
+
+@media(max-width: 634px){
+
+    .aba-perfil{
+        top: 38%;
+    }
+
+    .sub-div-sidebar h2,.sub-div-sidebar div p{
+        display: none;
+    }
+
+    .header{
+        flex-wrap: wrap;
+    }
+
+    .pesquisa{
+        margin: 1rem auto;
+        order: 5;
+    }
+
+    .pesquisa input{
+        width: 50vw;
+    }
+
+    .pesquisa img{
+        display: none;
+    }
+}
+
+@media(max-width: 390px){
+    .semLogin{
+        font-size: 17px;
+    }
+
+    .semLogin img{
+        display: none;
+    }
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image.png" href="img/youtubelogo.svg">
+    <link rel="stylesheet" href="login.css">
+
+    <title>Login Youtube</title>
+</head>
+<body>
+    <section class="container">
+        <div class="box">
+            <div class="youtube">
+                <img class="img" src="img/youtubelogo.svg" alt="snapchat">
+                <h1 class="titulo">Faça login no Youtube</h1>
+            </div>
+
+            <form class="form adicionar" id="novoItem" data-formulario>
+                <fieldset>
+                    <label for="nome" class="email">Nome de usuário</label>
+                    <input type="text" id="nome" name="nome" class="input-padrao" required minlength="4">
+                    <span class="mensagem-erro"></span>
+                </fieldset>
+                <fieldset>
+                    <label for="Email" class="email">Email</label>
+                    <input type="email" id="Email" name="Email" class="input-padrao" required minlength="4">
+                    <span class="mensagem-erro"></span>
+                </fieldset>
+                <fieldset>
+                    <label for="Senha" class="email">Senha</label>
+                    <input type="password" id="Senha" name="Senha" class="input-padrao senha" required>
+                    <span class="mensagem-erro"></span>
+                </fieldset>
+                
+                <div>
+                    <input value="Avançar" class="formulario__botao" id="enviar" data-botao-enviar type="submit">
+                    <span class="mensagem-erro"></span>
+                </div>
+            </form>
+            
+        </div>
+    </section>
+
+    <script src="js/script.js" type="module"></script>
+</body>
+</html>

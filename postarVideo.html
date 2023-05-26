@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="/styles/formsVideo.css">
+    <title>Youtube post video</title>
+    <link rel="shortcut icon" href="./img/youtubelogo.svg" type="image/x-icon">
+</head>
+
+<body>
+
+    <!-- Cabecalho -->
+    <header class="header">
+
+        <div class="menu-esquerda">
+            <img src="img/menu hamburguer.svg" alt="hamburguer" class="hamburguer">
+            <a href="index.html"><img src="img/youtube.svg" alt="youtube" id="youtube-logo"></a>
+        </div>
+
+        <div class="menu-direita">
+            <a href="postarVideo.html"><img src="img/camera.svg" data-video alt=""></a>
+            <img src="img/sino.svg" alt="">
+            <a href="login.html" data-usuario class="semLogin"><img src="img/icons8-male-user-32.png" alt="" id="icone-perfil">Login</a>
+            
+        </div>
+
+    </header>
+
+    <main class="container">
+
+        <form class="container__formulario" data-formulario>
+            <h2 class="formulario__titulo">Envie um vídeo!</h3>
+                <div class="formulario__campo">
+                    <label class="campo__etiqueta" for="url">Link embed</label>
+                    <input name="url" class="campo__escrita" required
+                        placeholder="Por exemplo: https://www.youtube.com/embed/FAY1K2aUg5g" id='url' data-url/>
+                </div>
+
+
+                <div class="formulario__campo">
+                    <label class="campo__etiqueta" for="titulo">Titulo do vídeo</label>
+                    <input name="titulo" class="campo__escrita" required placeholder="Neste campo, dê o nome do vídeo"
+                        id='titulo' data-titulo/>
+                </div>
+
+                <input class="formulario__botao" type="submit" />
+        </form>
+
+    </main>
+    <script src="js/criarVideo.js" type="module"></script>
+    <script src="js/loginAdd.js"></script>
+</body>
+
+</html>

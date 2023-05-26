@@ -1,0 +1,105 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F2F2F2;
+}
+
+.box{
+    width: 356px;
+    height: auto;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem .5rem;
+    border-radius: 8px;
+    box-shadow: 9px 9px 21px #dedede, -9px -9px 21px #f0f0f0;
+}
+
+.youtube{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img{
+    width: 60px;
+    margin-top: .5rem;
+}
+
+.titulo{
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.email{
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: .5rem;
+    color: #656B73;
+    align-self: flex-start;
+}
+
+.input-padrao{
+    width: 90%;
+    padding: 1rem;
+    background-color: #F2F2F2;
+    border-radius: 4px;
+    border: transparent;
+    transition: 300ms;
+}
+
+.input-padrao:hover{
+    border: solid 1px #0096E5;
+}
+
+.input-padrao:focus{
+    outline: none;
+    border:solid 1px #0096E5;
+}
+
+.form{
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formulario__botao{
+    border: none;
+    color: white;
+    padding: .7rem 3rem;
+    margin-top: .5rem;
+    border-radius: 20px;
+    background-color: #0096E5;
+    transition: 300ms;
+}
+
+.formulario__botao:hover{
+    background-color: #0289d1;
+}
+
+fieldset{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    border: none;
+    box-shadow: none;
+    margin-bottom: 1rem;
+}
+
+.mensagem-erro{
+    color: red;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+}
